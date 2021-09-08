@@ -71,3 +71,10 @@ func (e *RequiredValidator) processField(fieldName string, field *structs.Field)
 
 	return nil
 }
+
+type PlayGroundValidator struct {
+}
+
+func (v *PlayGroundValidator) Validate(s interface{}) error {
+	return validator.New().Struct(s)
+}
