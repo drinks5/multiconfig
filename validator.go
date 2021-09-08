@@ -5,6 +5,7 @@ import (
 	"reflect"
 
 	"github.com/fatih/structs"
+	"github.com/go-playground/validator/v10"
 )
 
 // Validator validates the config against any predefined rules, those predefined
